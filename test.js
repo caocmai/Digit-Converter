@@ -1,4 +1,5 @@
 const converter = require("./index.js")
 
 console.log(converter.singleDigit(3))
-console.log(converter.doubleDigits(91))
+console.log(converter.doubleDigits(99))
+console.log(converter.tripleDigits(279))
