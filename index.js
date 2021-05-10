@@ -61,13 +61,21 @@ function doubleDigits(num) {
 
 function tripleDigits(num) {
     let strNum = num.toString()
-    let hundred = strNum[0]
+    let hundredsDigit = strNum[0]
 
-    return digits[hundred] +  " " + exponents["100"] + " and " + doubleDigits(strNum.slice(1))
+    return digits[hundredsDigit] +  " " + exponents["100"] + " and " + doubleDigits(strNum.slice(1))
+}
+
+function fourDigits(num) {
+    let strNum = num.toString()
+    let  thousandsDigit = strNum[0]
+
+    return digits[thousandsDigit] + " " + exponents[1000] + " " + tripleDigits(strNum.slice(1))
 }
 
 module.exports = {
   singleDigit,
   doubleDigits,
   tripleDigits,
+  fourDigits
 };
