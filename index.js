@@ -54,7 +54,7 @@ function doubleDigits(num) {
     if (strNum[1] == 0) {
       return byTens[num];
     } else {
-      return byTens[strNum[0] + "0"] + "-" + digits[strNum[1]];
+      return byTens[strNum[0] + "0"]  + " " + digits[strNum[1]];
     }
   }
 }
@@ -68,14 +68,47 @@ function tripleDigits(num) {
 
 function fourDigits(num) {
     let strNum = num.toString()
-    let  thousandsDigit = strNum[0]
+    let thousandsDigit = strNum.slice(0, strNum.length-3)
 
-    return digits[thousandsDigit] + " " + exponents[1000] + " " + tripleDigits(strNum.slice(1))
+    var thousandsWord = ""
+    switch (thousandsDigit.length) {
+      case 1:
+        thousandsWord = singleDigit(thousandsDigit)
+        break
+      case 2:
+        thousandsWord = doubleDigits(thousandsDigit)
+        break
+      case 3:
+        thousandsWord = tripleDigits(thousandsDigit)
+        break
+    }
+
+    return thousandsWord + " " + exponents[1000] + " " + tripleDigits(strNum.slice(1))
+}
+
+
+function convertNum(num) {
+  let digitCount = num.toString().length
+  
+  switch (true) {
+    case digitCount == 1:
+      return singleDigit(num)
+    case digitCount == 2: 
+      return doubleDigits(num)
+    case digitCount == 3:
+      return tripleDigits(num)
+    case digitCount < 7:  
+      return fourDigits(num)
+    case digitCount < 12:
+      break
+  }
+
 }
 
 module.exports = {
   singleDigit,
   doubleDigits,
   tripleDigits,
-  fourDigits
+  fourDigits,
+  convertNum
 };
