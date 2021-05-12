@@ -119,6 +119,31 @@ function millionConvert(num) {
 
 }
 
+function billionConvert(num) {
+  let strNum = num.toString();
+  let billionDigit = strNum.slice(0, strNum.length - 9);
+
+  var billionWord = "" 
+  switch (billionDigit.length) {
+    case 1:
+      billionWord = singleDigit(billionDigit);
+      break;
+    case 2:
+      billionWord = doubleDigits(billionDigit);
+      break;
+    case 3:
+      billionWord = tripleDigits(billionDigit);
+      break;
+  }
+
+  let millionSlice = strNum.slice(billionDigit.length)
+
+  return (
+    billionWord + " " + exponents[1000000000] + " " + millionConvert(millionSlice)
+  );
+
+}
+
 function convertNum(num) {
   let digitCount = num.toString().length;
 
@@ -133,6 +158,9 @@ function convertNum(num) {
       return thousandsConvert(num);
     case digitCount < 10:
       return millionConvert(num)
+    case digitCount < 13:
+      return billionConvert(num)
+      
   }
 }
 
