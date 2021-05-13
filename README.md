@@ -23,7 +23,7 @@ alphanumericWord = converter.convertNum(123456789)
 ```
 
 # API
-**convertNum(int)**
+**convertNum(int)** <br>
 Returns the alphanumeric string of the integer. 
 
 # License
