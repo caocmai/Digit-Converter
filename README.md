@@ -4,27 +4,27 @@
 
 
 # digit-number-converter
-Simple Node module to convert a numeric number from 0 to 999999999999 into their corresponding alphanumeric format.
+A simple Node module to convert a numeric number from 0 to 999999999999 into their corresponding English word format.
 
 # Install 
-To install run:
+To install run: <br>
 `$ npm install digit-number-converter`
 
 # Usage
 ```javascript
 const converter = require("digit-number-converter")
 
-alphanumericWord = converter.convertNum(2)
-// alphanumericWord = two
+numberWord = converter.convertNum(2)
+// numberWord = two
 
-alphanumericWord = converter.convertNum(123456789)
-// alphanumericWord = one hundred twenty three million four hundred fifty six thousand seven hundred eighty nine
+numberWord = converter.convertNum(123456789)
+// numberWord = one hundred twenty three million four hundred fifty six thousand seven hundred eighty nine
 
 ```
 
 # API
 **convertNum(int)** <br>
-Returns the alphanumeric string of the integer. 
+Returns the English word representation string of the integer. 
 
 # License
 The MIT License (MIT)
