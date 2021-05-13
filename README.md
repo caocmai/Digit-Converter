@@ -3,7 +3,7 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 
-# Digit Converter
+# digit-number-converter
 Simple Node module to convert a numeric number from 0 to 999999999999 into their corresponding alphanumeric format.
 
 # Install 
