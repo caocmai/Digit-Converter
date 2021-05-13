@@ -8,7 +8,8 @@ To install run:
 `$ npm install `
 
 # Usage (Not yet published)
-`converter = require("")
+```javascript
+converter = require("")
 
 alphanumeric_word = converter.convertNum(2)
 // alphanumeric = two
@@ -16,4 +17,4 @@ alphanumeric_word = converter.convertNum(2)
 alphanumeric_word = converter.convertNum(123456789)
 // alphanumeric = one hundred twenty three million four hundred fifty six thousand seven hundred eighty nine
 
-`
+```
