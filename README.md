@@ -4,13 +4,13 @@
 
 
 # digit-number-converter
-A simple Node module to convert a numeric number from 0 to 999999999999 into their corresponding English word format.
+A simple Node module to convert a numeric number from 0 to 999999999999 into its corresponding English word format.
 
-# Install 
+## Install 
 To install run: <br>
 `$ npm install digit-number-converter`
 
-# Usage
+## Usage
 ```javascript
 const converter = require("digit-number-converter")
 
@@ -22,11 +22,11 @@ numberWord = converter.convertNum(123456789)
 
 ```
 
-# API
+## API
 **convertNum(int)** <br>
 Returns the English word representation string of the integer. 
 
-# License
+## License
 The MIT License (MIT)
 
 Copyright © 2021, Cao Mai
