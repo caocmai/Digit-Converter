@@ -165,9 +165,9 @@ function convertNum(num) {
 }
 
 module.exports = {
-  singleDigit,
-  doubleDigits,
-  tripleDigits,
-  thousandsConvert,
+  // singleDigit,
+  // doubleDigits,
+  // tripleDigits,
+  // thousandsConvert,
   convertNum,
 };

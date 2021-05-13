@@ -9,7 +9,7 @@ To install run:
 
 # Usage (Not yet published)
 ```javascript
-converter = require("digit-number-converter")
+const converter = require("digit-number-converter")
 
 alphanumericWord = converter.convertNum(2)
 // alphanumericWord = two
