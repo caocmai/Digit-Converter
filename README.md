@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/caocmai/Digit-Converter.svg?branch=main)](https://travis-ci.com/caocmai/Digit-Converter)
 
 # Digit Converter
-Simple Node module to convert a numeric number from 0 through 100 billion into their corresponding alphanumeric format.
+Simple Node module to convert a numeric number from 0 through 999999999999 billion into their corresponding alphanumeric format.
 
 # Install (Not yet published)
 To install run:
