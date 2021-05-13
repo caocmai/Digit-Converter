@@ -1,15 +1,15 @@
 [![Build Status](https://travis-ci.com/caocmai/Digit-Converter.svg?branch=main)](https://travis-ci.com/caocmai/Digit-Converter)
 
 # Digit Converter
-Simple Node module to convert a numeric number from 0 through 999999999999 into their corresponding alphanumeric format.
+Simple Node module to convert a numeric number from 0 to 999999999999 into their corresponding alphanumeric format.
 
-# Install (Not yet published)
+# Install 
 To install run:
-`$ npm install `
+`$ npm install digit-number-converter`
 
 # Usage (Not yet published)
 ```javascript
-converter = require("")
+converter = require("digit-number-converter")
 
 alphanumericWord = converter.convertNum(2)
 // alphanumericWord = two
