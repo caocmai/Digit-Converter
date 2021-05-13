@@ -1,6 +1,6 @@
 {
   "name": "digit-number-converter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,11 @@
   "devDependencies": {
     "mocha": "^8.4.0",
     "request": "^2.88.2"
-  }
+  },
+  "keywords": [
+    "number",
+    "string",
+    "converter",
+    "alphanumeric"
+  ]
 }
