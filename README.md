@@ -24,7 +24,7 @@ numberWord = converter.convertNum(123456789)
 
 ## API
 **convertNum(int)** <br>
-Returns the English word representation string of the integer. 
+Returns the English word representation of the integer as a string. 
 
 ## License
 The MIT License (MIT)
